@@ -19,6 +19,9 @@
 		57B9A389188FFD260087818D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B9A371188FFD260087818D /* UIKit.framework */; };
 		57B9A391188FFD260087818D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57B9A38F188FFD260087818D /* InfoPlist.strings */; };
 		57B9A393188FFD260087818D /* UITableViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A392188FFD260087818D /* UITableViewExampleTests.m */; };
+		57B9A39E188FFD640087818D /* ADTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A39D188FFD640087818D /* ADTableViewController.m */; };
+		57B9A3A1188FFE600087818D /* ADCellCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A3A0188FFE600087818D /* ADCellCat.m */; };
+		57B9A3A4189000470087818D /* ADCellDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9A3A3189000470087818D /* ADCellDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		57B9A38E188FFD260087818D /* UITableViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		57B9A390188FFD260087818D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57B9A392188FFD260087818D /* UITableViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewExampleTests.m; sourceTree = "<group>"; };
+		57B9A39C188FFD640087818D /* ADTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTableViewController.h; sourceTree = "<group>"; };
+		57B9A39D188FFD640087818D /* ADTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTableViewController.m; sourceTree = "<group>"; };
+		57B9A39F188FFE600087818D /* ADCellCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCellCat.h; sourceTree = "<group>"; };
+		57B9A3A0188FFE600087818D /* ADCellCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCellCat.m; sourceTree = "<group>"; };
+		57B9A3A2189000470087818D /* ADCellDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCellDog.h; sourceTree = "<group>"; };
+		57B9A3A3189000470087818D /* ADCellDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCellDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +116,16 @@
 		57B9A373188FFD260087818D /* UITableViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				57B9A37C188FFD260087818D /* ADAppDelegate.h */,
-				57B9A37D188FFD260087818D /* ADAppDelegate.m */,
 				57B9A37F188FFD260087818D /* Images.xcassets */,
 				57B9A374188FFD260087818D /* Supporting Files */,
+				57B9A37C188FFD260087818D /* ADAppDelegate.h */,
+				57B9A37D188FFD260087818D /* ADAppDelegate.m */,
+				57B9A39C188FFD640087818D /* ADTableViewController.h */,
+				57B9A39D188FFD640087818D /* ADTableViewController.m */,
+				57B9A39F188FFE600087818D /* ADCellCat.h */,
+				57B9A3A0188FFE600087818D /* ADCellCat.m */,
+				57B9A3A2189000470087818D /* ADCellDog.h */,
+				57B9A3A3189000470087818D /* ADCellDog.m */,
 			);
 			path = UITableViewExample;
 			sourceTree = "<group>";
@@ -241,7 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B9A37A188FFD260087818D /* main.m in Sources */,
+				57B9A3A4189000470087818D /* ADCellDog.m in Sources */,
+				57B9A39E188FFD640087818D /* ADTableViewController.m in Sources */,
 				57B9A37E188FFD260087818D /* ADAppDelegate.m in Sources */,
+				57B9A3A1188FFE600087818D /* ADCellCat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +384,7 @@
 				GCC_PREFIX_HEADER = "UITableViewExample/UITableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewExample/UITableViewExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,6 +398,7 @@
 				GCC_PREFIX_HEADER = "UITableViewExample/UITableViewExample-Prefix.pch";
 				INFOPLIST_FILE = "UITableViewExample/UITableViewExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

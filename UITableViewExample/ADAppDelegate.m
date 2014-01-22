@@ -7,6 +7,7 @@
 //
 
 #import "ADAppDelegate.h"
+#import "ADTableViewController.h"
 
 @implementation ADAppDelegate
 
@@ -15,6 +16,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    // try UITableViewStyleGrouped, too
+    self.window.rootViewController = [[ADTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
